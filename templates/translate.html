@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block container%}
+    {% for key,value in translation.items() %}
+                
+    <div class = "popup">
+        <span class ='word' id='{{key+1}}'>{{value}}</span>
+        <span class = "popuptext" id="myPopup{{key+1}}"></span>
+    </div>
+    {% endfor %}
+    
+
+{% endblock %}
